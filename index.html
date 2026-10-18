@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моё плавание и тренерство</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #102b3a;
+      background: #f7f5ef;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 28px 8%;
+      color: white;
+      background: #176b87;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 8%;
+    }
+
+    .hero {
+      text-align: center;
+      background: #dff5f1;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0 0 15px;
+    }
+
+    h2 {
+      color: #176b87;
+      font-size: 34px;
+    }
+
+    h3 {
+      color: #176b87;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      color: white;
+      background: #102b3a;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .about,
+    .coach {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .card {
+      padding: 25px;
+      background: #8ee8df;
+      border-radius: 10px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 25px rgba(16, 43, 58, 0.2);
+    }
+
+    figcaption {
+      padding-top: 10px;
+      color: #58717b;
+      font-size: 14px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    footer {
+      padding: 25px;
+      color: white;
+      background: #102b3a;
+      text-align: center;
+    }
+
+    max-width: 700px {
+      h1 {
+        font-size: 36px;
+      }
+
+      .about,
+      .coach {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 40px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>В ритме воды</h1>
+    <p>Моё плавание, спортивный путь и тренерство</p>
+
+    <nav aria-label="Основная навигация">
+      <a href="#about">Обо мне</a>
+      <a href="#style">Мой стиль</a>
+      <a href="#coach">Тренерство</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Плавание — это мой ритм</h2>
+
+      <p>
+        Я занимаюсь плаванием уже 12 лет, плаваю за сборную ИРНИТУ
+        и продолжаю развиваться в любимом виде спорта.
+      </p>
+
+      <a class="button" href="#coach">
+        Перейти к разделу о тренерстве
+      </a>
+    </section>
+
+    <section id="about">
+      <h2>Обо мне</h2>
+
+      <div class="about">
+        <article>
+          <h3>Мой спортивный путь</h3>
+
+          <p>
+            Плавание стало важной частью моей жизни. За 12 лет тренировок
+            я научилась быть выносливой, дисциплинированной
+            и внимательной к технике.
+          </p>
+        </article>
+
+        <aside class="card">
+          <h3>Мои факты</h3>
+
+          <ul>
+            <li>12 лет занимаюсь плаванием;</li>
+            <li>плаваю за сборную ИРНИТУ;</li>
+            <li>основной стиль — плавание на спине;</li>
+            <li>полгода работаю детским тренером.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="style">
+      <h2>Мой основной стиль — плавание на спине</h2>
+
+      <p>
+        В этом стиле особенно важны правильное положение тела,
+        спокойное дыхание, чувство воды и ровный ритм движений.
+      </p>
+    </section>
+
+    <section class="coach" id="coach">
+      <figure>
+        <img
+          src="img/trener.jpg"
+          alt="Дети в плавательных шапочках готовятся к занятию в бассейне"
+        >
+
+        <figcaption>
+          На детской тренировке: учимся быть уверенными в воде.
+        </figcaption>
+      </figure>
+
+      <article>
+        <h2>Детский тренер</h2>
+
+        <p>
+          Полгода я являюсь детским тренером по плаванию.
+          Мне нравится помогать детям привыкать к воде,
+          осваивать технику и видеть их первые успехи.
+        </p>
+
+        <h3>На тренировках мы учимся:</h3>
+
+        <ul>
+          <li>чувствовать себя уверенно в воде;</li>
+          <li>правильно дышать и держать ритм;</li>
+          <li>уважать свои возможности;</li>
+          <li>радоваться собственному прогрессу.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 · Личный проект о плавании</p>
+  </footer>
+</body>
+</html>
